@@ -1,34 +1,60 @@
+
 <!DOCTYPE html>
+<html lang="en">
     <head>
         <title>The Austin Hiking Club</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="media/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+        <!--Favicon and logo oak tree source: https://pngset.com/download-free-png-pkcjc-->
     </head>
     <body>
+        <div class="pagecontainer">
+            <div class="contentwrap">
             <video autoplay muted loop id="video">
-                <source src="videos/bridge3.mp4" type="video/mp4">
+                <source src="media/bridge3.mp4" type="video/mp4">
             </video>
-            <header>
-                <h2>
-                    The Austin Hiking Club
-                </h2>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="aboutus.html">About Us</a>
-                    <a href="membership.html">Membership</a>
-                    <a href="contact.html">Contact</a>
+                <nav class="normnav">
+                    <a href="index.html" class="logo">AHC</a>
+                    <a href="index.html" class="navitem">Home</a>
+                    <a href="aboutus.html" class="navitem">About Us</a>
+                    <a href="membership.html" class="navitem">Membership</a>
+                    <a href="contact.html" class="navitem">Contact</a>
+                    <div class="navbar">
+                        <div class="container nav-container">
+                          <input class="checkbox" type="checkbox" name="" id="" />
+                          <div class="hamburger-lines">
+                              <span class="line line1"></span>
+                              <span class="line line2"></span>
+                              <span class="line line3"></span>
+                          </div>  
+                          <div class="menu-items">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                          </div>
+                        </div>
+                      </div>
                 </nav> 
-            </header>
+            <div class="pad"></div>
             <h1>
-                Home
+                The Austin Hiking Club
             </h1>
             <p>
                 Do you like hiking and care about environmental preservation? Then the Austin hiking club is for you! 
-                Signing up is easy: just fill out the form on our site. Join us in enjoying and appreciating
+                Signing up is easy: just fill out the <a href="contact.html" class="formlink">form</a> on our site. Join us in enjoying and appreciating
                 the natural beauty of Austin!
             </p>
+            </div>
             <footer>
                 &copy The Austin Hiking Club 2022. Footage by Armando Loyola.
             </footer>         
+        </div>
     </body>
 </html>
